@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+function reduce(prev,curr){
+	if(curr >= 100){
+		return prev
+	}
+	prev.push(curr);
+	return reduce(prev,curr + 1)
+}
+var arr = reduce([],0);
+console.log(arr);
+
+</script>
+</body>
+</html>
